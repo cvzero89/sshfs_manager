@@ -9,7 +9,7 @@ time.sleep(10) ## Sleeping at login helps with Wi-Fi connecting.
 
 ## Load variables:
 
-env_path = '/Users/carlosvelasquez/Documents/dum-e/sshfs_manager/.env' ## Due to cron/wake executing the task need to use full path instead of os.getcwd().
+env_path = '/path/to/.env' ## Due to cron/wake executing the task need to use full path instead of os.getcwd().
 load_dotenv(dotenv_path=env_path)
 host = os.environ['host']
 ssh_user = os.environ['ssh_user']
