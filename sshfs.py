@@ -85,7 +85,7 @@ class sshFS:
             if self.path_to_key:
                 connect_command = [sshfs, server_and_path, self.local_mount_point, '-o', f'IdentityFile={self.path_to_key}', '-p', self.port]
             else: 
-                print(f'Missing key in .env_{self.host} file. Cannot connect to server.')
+                print(f'Missing key in .config.json file. Cannot connect to server.')
                 exit()           
             command_string = ' '.join(connect_command)
             subprocess.run(command_string, shell=True)
