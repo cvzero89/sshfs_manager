@@ -1,0 +1,12 @@
+{
+	"server_1": [
+		{
+			"host": "x.x.x.x",
+			"ssh_user": "user",
+			"path_to_key" : "~/.ssh/key",
+			"server_mount_point" : "/server/mount/point",
+			"local_mount_point": "local/mount/point",
+			"port" : "22"
+		}
+		]
+}
